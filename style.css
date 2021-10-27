@@ -70,7 +70,6 @@ body {
   height: 40%;
   width: 40%;
   object-fit: cover;
-  opacity: .85;
   box-shadow: 5px 5px 5px black;
 }
 
