@@ -17,11 +17,14 @@ body {
 
 .navbar {
   border-bottom: 1px dashed #130b52;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar ul {
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
   position: relative;
   overflow: hidden;
@@ -29,34 +32,39 @@ body {
   width: fit-content;
 }
 
-.navbar li {
+.navbar ul li {
   display: inline-block;
 }
 
 .navbar a {
+  font-size: 30px;
   text-decoration: none;
   display: block;
-  width: 120px;
+  width: 150px;
   text-align: center;
-  padding: 10px 20px;
   text-shadow: #251d63 1px 1px 1px;
+  background-color: #7c254271;
+  border-radius: 10px;
 }
 
 .navbar a:hover {
   color: white;
-  background-color: #7c2537;
-  border-radius: 5px;
+  background-color: #341951cb;
+  border-radius: 10px;
 }
+
 
 .navbar a.active {
   color: white;
-  background-color: #a00303;
-  border-radius: 5px;
+  background-color: #a00303cc;
+  border-radius: 10px;
 }
 
-.container {
-  position: relative;
-  text-align: center;
+#container {          
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
 }
 
 .centered {
@@ -98,7 +106,7 @@ body {
 }
 
 h1 {
-  font-size: 85px;
+  font-size: 100px;
   margin: 0;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -106,7 +114,7 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 26px;
   position: absolute;
   margin: 0;
   transform: translate(-50%, -50%);
