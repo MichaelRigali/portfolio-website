@@ -16,7 +16,7 @@ body {
 }
 
 .navbar {
-  border-bottom: 1px dashed #130b52;
+  /* border-bottom: 1px dashed #130b52; */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@ body {
   font-size: 30px;
   text-decoration: none;
   display: block;
-  width: 200px;
+  width: 250px;
   text-align: center;
   text-shadow: #251d63 1px 1px 1px;
   background-color: #4e03036c;
