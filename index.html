@@ -3,56 +3,130 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Rigali Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
+        integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <title>Michael Rigali Portfolio</title>
+
+
+    <!-- Update these for... font-family: 'PT Sans', sans-serif; -->
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    
+    
 </head>
 
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="about_me.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact_me.html">Contact Me</a></li>
+    <header>
+        <div class="logo">
+            <img src="clip_art.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <p class="section__title section__title--intro">
+            Hello World, my name is <strong>Michael Rigali</strong>
+        </p>
+        <p class="section__subtitle section__subtitle--intro">Prospective Software Engineer Intern</p>
+        <img src="michael.jpg" alt="a picture of me smiling" class="intro__img">
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What Makes Me A Strong Candidate</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Discipline</h3>
+                <p>My motto is that motivation fails, but discipline perseveres. The principles that ROTC and boxing have instilled in me
+                    have truly resonated, and I continue to exercise discipline in my everyday tasks and regimes.   
+                </p>
+            </div> 
+            <!-- Service -->
+
+            <div class="service">
+                <h3>Fervor</h3>
+                <p>Coding brings me a constant sense of catharsis via problem solving. I seek
+                    to be a part of an environment that shares the same passion that I possess in order to contribute
+                    to any team in a meaningful way. 
+                </p>
+            </div>
+            <!-- Service -->
+
+            <div class="service">
+                <h3>Adept</h3>
+                <p>I am quick to learn and hope to join a team that facilitates proficiency in order to further my education as a
+                    whole and continue to develop my skill set in order to be the best version of myself possible. 
+
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Interpersonal</h3>
+                <p>Having worked in the physical therapy field, as well as tutoring academia,
+                     I have spent years practicing communication skills, as both a team 
+                    member and a leader.
+                </p>
+            </div>
+            <!-- Service -->
+        </div>
+        <!-- Services -->
+
+        <a href="work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+
+        <div class="about-me__body">
+            <p></p>
+            <p></p>
+        </div>
+    
+        <img src="michael_2.jpg" alt="Michael smiling part two">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title">My Work</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="clip_art.png" alt="Project description" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <a href="mailto:michael.r.rigali@gmail.com" class="footer__link">michael.r.rigali@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/michael-richard-rigali/"></a>LinkedIn</li>
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/MichaelRigali">GitHub</a></li>
         </ul>
-    </div>
-    <div class="container2">
-        <div class="wrapper">
-            <img src="clip_art.png" id="clipart">
-            <img src="sitting.png" id="sitting">
-            <div id="quoteone">
-                <p2>"There's no risk when </p2>
-            </div>
-            <div id="quoteoneone">
-                <p2>you go after a dream."</p2>
-            </div>
-            <div id="quotetwo">
-                <p>"There's a tremendous amount to</p>
-            </div>
-            <div id="quotetwotwo">
-                <p>risk when playing it safe."</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="wrapper">
-            <img src="michael.jpg" id="circle_image_responsive">
-            <h1 data-heading="Michael Rigali" class="centered">
-                Michael Rigali
-            </h1>
-            <h2 data-heading="Oregon State University, Post-Baccalaureate Computer Science." class="centered2">
-                Oregon State University, Post-Baccalaureate Computer Science.
-            </h2>
-            <h3 data-heading="Expected Graduation: Summer 2023" class="centered3">
-                Expected Graduation: Summer 2023
-            </h3>
-        </div>
-
-    </div>
-
+    </footer>
 </body>
-
 
 </html>
