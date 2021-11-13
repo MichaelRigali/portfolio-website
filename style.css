@@ -265,6 +265,11 @@ nav { display: none; }
   float: left;
 }
 
+.about-me__body p {
+  background-color: rgb(56, 89, 117);
+  border-radius: 15px;
+}
+
 .about-me__img {
   box-shadow: var(--bs);
   margin-top: 30px;
@@ -289,6 +294,9 @@ nav { display: none; }
   }
 
   .section__subtitle--about {
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
     grid-column: 1 / -1;
     grid-row: 2;
     position: relative;
@@ -298,12 +306,14 @@ nav { display: none; }
     padding-right: calc(200px + 10em);
   }
 
+
   .about-me__img {
     grid-area: img;
     position: relative;
     z-index: 2;
-    min-width: 475px;
+    min-width: 600px;
     object-fit:cover;
     left: -8em;
+    top: 4em;
   }
 }
