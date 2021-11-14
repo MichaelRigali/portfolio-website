@@ -237,11 +237,21 @@ nav { display: none; }
   background-color: rgb(56, 89, 117);
   border-radius: 15px;
   width: 255px;
-  min-height: 480px;
+  min-height: 510px;
   box-sizing: border-box;
   border: 2px solid white;
   padding: 10px 10px;
 } 
+
+.language {
+  position: relative;
+  background-color: rgb(56, 89, 117);
+  box-sizing: border-box;
+  border: 2px solid white;
+  padding: 10px 10px;
+  border-radius: 15px;
+  width: 295px;
+}
 
 .service h3 {
   text-align: center;
@@ -256,8 +266,6 @@ nav { display: none; }
   .services {
     display: flex;
     max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .service + .service {
@@ -270,8 +278,13 @@ nav { display: none; }
     object-fit:cover;
     box-shadow: var(--bs);
     border-radius: 15px;
-    border: 5px solid orange
+    border: 5px solid orange;
+    margin-bottom: 10px;
   }
+}
+
+#shift {
+  margin-left: -8px;
 }
 
 .about-me {
