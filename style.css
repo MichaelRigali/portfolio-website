@@ -147,6 +147,10 @@ h1 { font-size: var(--fs-h1);}
 h2 { font-size: var(--fs-h2);}
 h3 { font-size: var(--fs-h3);}
 
+html {
+  overflow-x: hidden;
+}
+
 .section__title {
   margin-bottom: 0;
   font-size: 3rem;
