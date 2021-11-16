@@ -6,8 +6,8 @@
 
 /* Custom properties for design */
 :root {
-  --ff-primary: font-family: 'PT Sans', sans-serif;
-  --ff-secondary: font-family: 'PT Sans', sans-serif;
+  --ff-primary: font-family: 'Source Sans Pro', sans-serif;
+  --ff-secondary: font-family: 'Source Sans Pro', sans-serif;
 
   --fw-reg: 300;
   --fw-bold: 900;
@@ -24,6 +24,38 @@
 
   --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+  --typewriterSpeed: 4s;
+  --typewriterCharacters: 40;
+}
+
+hello { 
+  position: relative;
+  width: max-content;
+}
+
+hello::before,
+hello::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+hello::before {
+  background:#366998;
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+hello::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
 @media (min-width: 800px) {
@@ -35,14 +67,36 @@
   }
 }
 
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* General Styles */
 body {
-  background: -webkit-linear-gradient(rgb(10, 72, 129), rgba(255, 255, 255), rgb(19, 136, 91));
+  background: #366998;
   color: #d1f0ff;
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6; 
+  display: grid;
+  place-content: center;
+  text-align: center;
 }
 
 section {
@@ -53,8 +107,6 @@ img {
   display: block;
   max-width: 100%;
 }
-
-.hello { font-size: 60px;}
 
 :focus {
   outline: 3px solid var(--clr-accent);
@@ -123,7 +175,7 @@ div:after {
   display: block;
   text-shadow: 2px 2px black;
   color: transparent;
-  margin-left: 8px;
+  margin-left: 20px;
   padding-top: 0px;
 }
 
@@ -132,7 +184,8 @@ div:after {
 }
 
 .section__title--intro hello {
-  font-weight: bold; font-size: 70px;
+  font-weight: bold; 
+  font-size: 40px;
 }
 
 .section__subtitle {
@@ -140,6 +193,8 @@ div:after {
   font-size: var(--fs-h3);
   padding-top: 80px;
 }
+
+
 
 .section__subtitle--intro, 
 .section__subtitle--about {
@@ -181,6 +236,7 @@ nav { display: none; }
   }
 
   .section__subtitle--intro {
+    color: #d1f0ff;
     align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
@@ -189,6 +245,10 @@ nav { display: none; }
     left: -1.5em;
     width: calc(100% + 3em);
     text-shadow: 2px 2px black;
+    color: #d1f0ff;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 6.5s forwards;
   }
 }
 
