@@ -322,7 +322,7 @@ nav { display: none; }
   color: white;
   text-align: center;
   border-top: solid 5px orange;
-  border-bottom: solid 5px rgb(250, 147, 147);
+  border-bottom: solid 5px rgb(255, 255, 255);
   background-image: url(services-bg.jpg);
   background-size:cover;
 }
@@ -400,8 +400,12 @@ nav { display: none; }
   }
 }
 
-#shift {
-  margin-left: -8px;
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
 }
 
 /* About Me Section */
@@ -422,8 +426,7 @@ nav { display: none; }
 .about-me {
   color: var(--clr-light);
   text-shadow: 2px 2px 2px black;
-
-  border-bottom: solid 5px orange; 
+  border-bottom: solid 5px rgb(1, 88, 38); 
   background-image: url(green_water.jpg);
   background-size:cover;
 }
@@ -471,7 +474,9 @@ nav { display: none; }
 .about-me__img {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  max-width: 500px;
+  height: auto;
+  width: 100%;
   box-shadow: var(--bs);
   margin-top: 30px;
   border-radius: 50%;
