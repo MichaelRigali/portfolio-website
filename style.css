@@ -321,10 +321,11 @@ nav { display: none; }
   color: white;
   text-align: center;
   border-top: solid 5px orange;
-  border-bottom: solid 5px rgb(255, 255, 255);
-  background-image: url(services-bg.jpg);
-  background-size:cover;
-  
+  border-bottom: solid 5px orange;
+  background-image: url(pier.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .section__title--services {
@@ -354,7 +355,7 @@ nav { display: none; }
 }
 
 .service p {
-  background-color: rgb(148, 159, 168, .6);
+  background-color: rgba(9, 11, 12, 0.6);
   border-radius: 15px;
   width: 100%;
   min-height: 525px;
@@ -389,31 +390,33 @@ nav { display: none; }
 }
 
 .flip-box-front {
+  background-color: #366998ef;
   margin-top: 50%;
   text-align: center;
-  color: white;
+  color:  var(--clr-light);
   border-radius: 50%;
   width: 100%;
-  border: 2px solid white;
-  width: 250px;
-  line-height: 125px;
+  border: 2px solid orange;
+  width: 150px;
+  line-height: 105px;
   color: orange;
   text-shadow: 2px 2px 3px rgba(0,0,0,.5),
         1px 1px 2px rgba(0,0,0,.5);
 }
 
 .flip-box-back {
-  background-color: dodgerblue;
-  color: white;
+  color: var(--clr-light);
   transform: rotateX(180deg);
-  background-color: rgb(148, 159, 168, .6);
+  background-color: #366998ef;
   border-radius: 15px;
   width: 100%;
   min-height: 515px;
-  border: 2px solid white;
-  padding: 10px 10px;
+  border: 2px solid orange;
+  padding: 5px 5px;
   width: 230px;
   transform: rotateY(180deg);
+  text-shadow: 2px 2px 3px rgba(0,0,0,.5),
+        1px 1px 2px rgba(0,0,0,.5);
 }
 
 .service h3 {
@@ -427,11 +430,9 @@ nav { display: none; }
   .services {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 5px;
+    column-gap: 22px;
     justify-content: center;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0 0;
+    
     box-sizing: border-box;
   }
 
@@ -440,13 +441,11 @@ nav { display: none; }
     object-fit:cover;
     box-shadow: var(--bs);
     border-radius: 15px;
-    border: 3px solid white;
+    border: 3px solid orange;
     
   }
 
-red { color:orange;
-
-}
+red { color:orange; }
 
 .item1 {
     grid-column-start: 1;
@@ -471,7 +470,7 @@ red { color:orange;
 	animation: topToBottom 12.5s linear infinite 0s;
 	-ms-animation: topToBottom 12.5s linear infinite 0s;
 	-webkit-animation: topToBottom 12.5s linear infinite 0s;
-	color: #ffffff;
+	color:  var(--clr-light);
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
@@ -545,9 +544,11 @@ red { color:orange;
 .about-me {
   color: var(--clr-light);
   text-shadow: 2px 2px 2px black;
-  border-bottom: solid 5px rgb(1, 88, 38); 
+  border-bottom: solid 5px orange; 
   background-image: url(green_water.jpg);
-  background-size:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about-me p1 {
@@ -624,8 +625,11 @@ span3 {
 
 /* My Work */
 .my-work {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
+  background-image: url(jelly.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
   text-align: center;
   display: grid;
   justify-content: center;
@@ -676,4 +680,36 @@ span3 {
   transform: scale(1.1);
   opacity: .75;
   border-radius: 15px;
+}
+
+/* Footer */
+
+.footer {
+  background: black;  
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__link {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+  opacity: .7;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
 }
