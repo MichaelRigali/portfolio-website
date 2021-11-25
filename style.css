@@ -329,7 +329,6 @@ nav { display: none; }
 
 .section__title--services {
   position: relative;
-  display: inline-block;
   color: white;
   text-align: center;
   text-shadow: 2px 2px 3px rgba(0,0,0,.95),
@@ -341,17 +340,20 @@ nav { display: none; }
   text-align: center;
 } 
 
+.container3 {
+  position: relative;
+  text-align: center;
+} 
+
 .service {
   position: relative;
-  display: inline-block;
-  margin-left: 20px;
+  margin-left: 10px;
   text-align: left;
   text-shadow: 2px 2px 3px rgba(0,0,0,.5),
         1px 1px 2px rgba(0,0,0,.5);
 }
 
 .service p {
-  margin: 5px 5px;
   background-color: rgb(148, 159, 168, .6);
   border-radius: 15px;
   width: 100%;
@@ -360,6 +362,59 @@ nav { display: none; }
   padding: 10px 10px;
   width: 250px;
 } 
+
+.flip-box {
+  background-color: transparent;
+  width: 240px;
+  height: 180px;
+  perspective: 1000px;
+  }
+
+.flip-box-inner {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  margin-top: 50%;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  width: 100%;
+  border: 2px solid white;
+  width: 250px;
+  line-height: 125px;
+  color: orange;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.5),
+        1px 1px 2px rgba(0,0,0,.5);
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+  background-color: rgb(148, 159, 168, .6);
+  border-radius: 15px;
+  width: 100%;
+  min-height: 515px;
+  border: 2px solid white;
+  padding: 10px 10px;
+  width: 230px;
+  transform: rotateY(180deg);
+}
 
 .service h3 {
   text-align: center;
@@ -372,10 +427,8 @@ nav { display: none; }
   .services {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;;
+    column-gap: 5px;
+    justify-content: center;
     margin-left: 0;
     margin-right: 0;
     padding: 0 0;
@@ -391,22 +444,30 @@ nav { display: none; }
     
   }
 
-red { color:orange;}
+red { color:orange;
+
+}
 
 .item1 {
     grid-column-start: 1;
     grid-column-end: ;
   }
 
+.flip-box-front:hover .slidingVertical span{
+    visibility: visible;
+    opacity: 1;
+}
+
 /*Vertical Sliding*/
 .slidingVertical{
   position: absolute;
-  top: 70%;
-  left: 50%;
+  top: 85%;
+  left: 45%;
   transform: translate(-50%, -50%);
 	display: inline;
 }
 .slidingVertical span{
+  padding-left: 5px;
 	animation: topToBottom 12.5s linear infinite 0s;
 	-ms-animation: topToBottom 12.5s linear infinite 0s;
 	-webkit-animation: topToBottom 12.5s linear infinite 0s;
@@ -463,6 +524,8 @@ red { color:orange;}
 	80% { opacity: 0; }
 	100% { opacity: 0; }
 }
+
+  
 
 /* About Me Section */
 
@@ -557,4 +620,60 @@ span3::after {
 
 span3 {
   font-size: 30px;
+}
+
+/* My Work */
+.my-work {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.section__subtitle--work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.shogip {
+  margin-bottom: 15px;
+}
+
+.portfolio {
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+.portfolio__item {
+  background: orange;
+  overflow: hidden;
+  border-radius: 15px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
+  opacity: 250ms linear;
+  border-radius: 15px;
+}
+
+.portfolio__item:focus {
+  position: relative;
+  z-index: 2;
+  border-radius: 15px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+  transform: scale(1.1);
+  opacity: .75;
+  border-radius: 15px;
 }
