@@ -18,6 +18,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+            if (document.documentElement.scrollTop > 200) {
+                document.getElementById("myDIV").className = "slideUp";
+                document.getElementById("myDIV2").className = "slideUp";
+            }
+            if (document.documentElement.scrollTop > 1300) {
+                document.getElementById("adventureWords").className = "slideUp";
+                document.getElementById("adventureWords2").className = "slideUp";
+                document.getElementById("adventureWords3").className = "slideUp";
+                document.getElementById("adventureWords4").className = "slideUp";
+                document.getElementById("adventurePic").className = "slideUp";
+            }
+        }
+    </script>
+        
 </head>
 
 <body>
@@ -49,150 +67,69 @@
                 <test>Michael</test>
             </div>
             <div class="gradient-shadow2" title=" Rigali">
-                <test2> Rigali.</test2>
+                <test2> Rigali</test2>
             </div>
         </h1>
+        <div id="shove">  
         <p class="section__subtitle section__subtitle--intro">Prospective Software Engineering Intern</p>
+        <p class="section__subtitle section__subtitle--intro">OSU Computer Science Post-Baccalaureate Student</p>
+        <p class="section__subtitle section__subtitle--intro">Expected Graduation: Winter 2023</p>
+        </div>
+
         <img src="michael.png" alt="a picture of me smiling" class="intro__img">
     </section>
 
     <!-- My Services -->
+    
     <section class="my-services">
         <div class="services">
-
             <div class="service">
                 <div class="container2">
+                    <div id="myDIV2">
                     <img src="rotcpic.jpg" alt="ROTC picture" class="rotc_img">
-                    <div class="slidingVertical">
-                        I demonstrate <span>
-                            <red>discipline.</red>
-                        </span>
-                        <span>
-                            <red> flexibility.</red>
-                        </span>
-                        <span>
-                            <red> leadership.</red>
-                        </span>
-                        <span>
-                            <red> fervor.</red>
-                        </span>
-                        <span>
-                            <red> proficiency.</red>
-                        </span>
-                    </div>
+                    </div>    
                 </div>
             </div>
 
-            <div class="services">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <p>Ethos</p>
-                        </div>
-                        <div class="flip-box-back">
-                            <p> I believe that motivation fails, but discipline perseveres. This principle enabled
-                                me to become the
-                                top ranked cadet out of my ROTC class during undergrad. I merited straight A's as
-                                well as the second
-                                highest APFT score at Loyola University, Maryland.
-                            </p>
-
-                        </div>
+            <div id="myDIV">
+                <div id="myDIV3">
+                    Coding gives me a constant sense of catharsis via problem solving and logical
+                    thought. I seek to be a part of an environment that shares the same passion I possess in order to
+                    contribute to a team of like minded individuals.                
                     </div>
+                <div id="myDIV4">
+                    I believe that motivation fails, but discipline perseveres. This principle enabled me to become the top 
+                    ranked cadet out of my ROTC class during my undergraduate studies. I merited straight A's as well as the second 
+                    highest APFT score at Loyola University, Maryland.
                 </div>
-           
-                <!-- Service -->
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <p>Interpersonal</p>
-                        </div>
-                        <div class="flip-box-back">
-                            <!-- <h3>Interpersonal</h3> -->
-                            <p> I am constantly practicing and improving my communication skills, as both a team
-                                member and
-                                a
-                                leader, whether that be in the physical
-                                therapy field, tutoring academic writing/anatomy and physiology, or coaching
-                                adolescent
-                                lacrosse.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Service -->
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <p>Adept</p>
-                        </div>
-                        <div class="flip-box-back">
-                            <!-- <h3>Adept</h3> -->
-                            <p>I am quick to learn as corroborated by my experience with clinical research and
-                                self-taught
-                                studies
-                                outside of University. I
-                                hope to join a team that facilitates proficiency in order to further develop my skill
-                                set.
-                                PT has
-                                also trained me to be flexible.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <p>Enthusiasm</p>
-                        </div>
-                        <div class="flip-box-back">
-                            <p>Coding brings me a constant sense of catharsis via problem solving and logical
-                                thought. I
-                                seek
-                                to be a part of an environment that shares the same passion I possess in order to
-                                contribute
-                                to a team of like minded individuals in a meaningful way.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
     </section>
 
     <!-- About Me -->
     <section class="about-me">
-        <h2 class="section__title section__title--about">About Me</h2>
-        <span3>OSU Computer Science Post-Baccalaureate Student</span3>
-        <div class="container">
-            <img src="turtle.jpg" alt="Family Pic" class="about-me__img">
-            <div class="about-me__body">
-                <p1>
+        <div>
+            <img src="turtle.jpg" alt="Family Pic" class="about-me__img" id="adventurePic">
+        </div>
+            <div>
+                <div id="adventureWords">
                     First of all, I love adventures... From skydiving to scubadiving.
-                </p1>
-                <p2>
+                </div>
+                <div id="adventureWords2">            
                     Not to mention my CS journey has been quite the experience. I grew up in rural Maryland but now
-                    reside in Baltimore.
-                </p2>
-                <p3>
-                    My hobbies include
-                    coding and mixed martial arts. While I used to compete on University of Maryland's Boxing Team, I
+                    reside in Baltimore.      
+                </div>
+                <div id="adventureWords3">
+                    While I used to compete on University of Maryland's Boxing Team, I
                     still find find that
                     exercise is particularly useful when needing to take a step back from my code to regroup and
                     reassess.
-                </p3>
-                <p4>
-                    I love my family and friends dearly... I also have a burning passion for pho.
-                </p4>
-            </div>
+                </div>
+                <div id="adventureWords4">
+                    I love my family and friends dearly... But I also love pho. You can never have too much pho.
+                </div>
         </div>
-
-
+    </div>
     </section>
+
 
     <!-- My Work -->
     <section class="my-work" id="work">
