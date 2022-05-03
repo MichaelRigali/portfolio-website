@@ -10,7 +10,6 @@
         integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    
 
     <!-- Update these for... font-family: 'PT Sans', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -19,23 +18,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script>
-        window.onscroll = function() {myFunction()};
+        // window.onscroll = function () { myFunction() };
 
-        function myFunction() {
-            if (document.documentElement.scrollTop > 200) {
-                document.getElementById("myDIV").className = "slideUp";
-                document.getElementById("myDIV2").className = "slideUp";
-            }
-            if (document.documentElement.scrollTop > 1300) {
-                document.getElementById("adventureWords").className = "slideUp";
-                document.getElementById("adventureWords2").className = "slideUp";
-                document.getElementById("adventureWords3").className = "slideUp";
-                document.getElementById("adventureWords4").className = "slideUp";
-                document.getElementById("adventurePic").className = "slideUp";
-            }
-        }
+        // function myFunction() {
+        //     if (document.documentElement.scrollTop > 200) {
+        //         document.getElementById("myDIV").className = "slideUp";
+        //         document.getElementById("myDIV2").className = "slideUp";
+        //     }
+        //     // if (document.documentElement.scrollTop > 1300) {
+        //     //     document.getElementById("adventureWords").className = "slideUp";
+        //     //     document.getElementById("adventureWords2").className = "slideUp";
+        //     //     document.getElementById("adventureWords3").className = "slideUp";
+        //     //     document.getElementById("adventureWords4").className = "slideUp";
+        //     //     document.getElementById("adventurePic").className = "slideUp";
+        //     // }
+        // }
     </script>
-        
 </head>
 
 <body>
@@ -43,9 +41,9 @@
         <!-- <div class="logo">
             <img src="clip_art.png" alt="">
         </div> -->
-        <button class="nav-toggle" aria-label="toggle navigation">
+        <!-- <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
-        </button>
+        </button> -->
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
@@ -54,85 +52,251 @@
                 <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
             </ul>
         </nav>
+        
     </header>
-
     <!-- Introduction -->
-    <section class="intro" id="home"> 
-        <h1 class="section__title section__title--intro">
+    <section class="intro">
+        <div class="cloud large cloud-1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud normal cloud-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud small cloud-3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud tiny cloud-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud large cloud-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud normal cloud-6">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud small cloud-7">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud tiny cloud-8">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud small cloud-9">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud normal cloud-10">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud tiny cloud-11">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="cloud small cloud-12">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="posfix4">
             <span2>
-                <Hello>Hello World! The name is Rigali...
+                <Hello>Hello World! The name is <span10>Rigali...</span10>
             </span2>
             </Hello>
-            <div class="gradient-shadow" title="Michael">
-                <test>Michael</test>
-            </div>
-            <div class="gradient-shadow2" title=" Rigali">
-                <test2> Rigali</test2>
-            </div>
-        </h1>
-        <div id="shove">  
-        <p class="section__subtitle section__subtitle--intro">Prospective Software Engineering Intern</p>
-        <p class="section__subtitle section__subtitle--intro">OSU Computer Science Post-Baccalaureate Student</p>
-        <p class="section__subtitle section__subtitle--intro">Expected Graduation: Winter 2023</p>
         </div>
-
+        <div class="posfix2">
         <img src="michael.png" alt="a picture of me smiling" class="intro__img">
-    </section>
-
-    <!-- My Services -->
-    
-    <section class="my-services">
-        <div class="services">
-            <div class="service">
-                <div class="container2">
-                    <div id="myDIV2">
-                    <img src="rotcpic.jpg" alt="ROTC picture" class="rotc_img">
-                    </div>    
-                </div>
-            </div>
-
-            <div id="myDIV">
-                <div id="myDIV3">
-                    Coding gives me a constant sense of catharsis via problem solving and logical
-                    thought. I seek to be a part of an environment that shares the same passion I possess in order to
-                    contribute to a team of like minded individuals.                
-                    </div>
-                <div id="myDIV4">
-                    I believe that motivation fails, but discipline perseveres. This principle enabled me to become the top 
-                    ranked cadet out of my ROTC class during my undergraduate studies. I merited straight A's as well as the second 
-                    highest APFT score at Loyola University, Maryland.
-                </div>
-    </section>
-
-    <!-- About Me -->
-    <section class="about-me">
-        <div>
-            <img src="turtle.jpg" alt="Family Pic" class="about-me__img" id="adventurePic">
         </div>
-            <div>
-                <div id="adventureWords">
-                    First of all, I love adventures... From skydiving to scubadiving.
+
+        <div class = "posfix5">
+            <h1 class="section__title section__title--intro">
+                <div class="gradient-shadow" title="Michael">
+                    <test>Michael</test>
                 </div>
-                <div id="adventureWords2">            
-                    Not to mention my CS journey has been quite the experience. I grew up in rural Maryland but now
-                    reside in Baltimore.      
+                <div class="gradient-shadow2" title=" Rigali">
+                    <test2> Rigali</test2>
                 </div>
-                <div id="adventureWords3">
-                    While I used to compete on University of Maryland's Boxing Team, I
-                    still find find that
-                    exercise is particularly useful when needing to take a step back from my code to regroup and
-                    reassess.
-                </div>
-                <div id="adventureWords4">
-                    I love my family and friends dearly... But I also love pho. You can never have too much pho.
-                </div>
+            </h1>
         </div>
+        <div class="posfix6">
+            <p class="section__subtitle section__subtitle--intro">
+                Prospective Software Engineering Intern
+            </p>
+            <p class="section__subtitle section__subtitle--intro">
+                OSU Computer Science Post-Baccalaureate
+            </p>
+            <p class="section__subtitle section__subtitle--intro">
+                Expected Graduation: Winter 2023
+            </p>
+        </div>
+
+    <div class="posfix10">
+        
     </div>
     </section>
 
+    <!-- My Services -->
+    <section class="my-services">
+        <div class="griddisplay">
+            <div id="myDIV2">
+                <img src="rotcpic.jpg" alt="ROTC picture" class="rotc_img">
+            </div>
+        <div class="posfix11">
+            <h1 class="section__title section__title--intro">
+                <div class="gradient-shadow3" title="Motivation fails,">
+                    <test3>Motivation fails,</test3>
+                </div>
+                <div class="gradient-shadow4" title=" but discipline perseveres.">
+                    <test4> but discipline perseveres.</test4>
+                </div>
+            </h1>
+        </div>
+        <div class="posfix12">
+            <p class="rotcacc">
+            This principle enabled me to become the top ranked cadet out of my ROTC class during my undergraduate studies.
+            </p>
+            <p class="rotcacc2">
+            I merited straight A's as well as the second highest APFT score at Loyola University, Maryland.
+            </p>
+        </div>
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+        </div>
+    </section>
+
+    <div class='canvas'>
+        <div id="positional">
+            <div class="quote-wrapper">
+                <blockquote class="text" cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+                    <p>While I used to compete on the University of Maryland's Boxing Team, I
+                        find that exercise is still particularly useful when needing to take a step back and
+                        reassess code.</p>
+                </blockquote>
+                <div class="quote-wrapper">
+                    <blockquote class="text">
+                        <p>Coding gives me a constant sense of catharsis via problem solving and logical
+                            thought. I seek to be a part of an environment that shares the same passion I possess.</p>
+                    </blockquote>
+                </div>
+            </div>
+
+
+        </div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+        <div class='bubble'></div>
+    </div>
+    <!-- About Me -->
+    <!-- <section class=" about-me">
+                        <div>
+                            <img src="turtle.jpg" alt="Family Pic" class="about-me__img" id="adventurePic">
+                        </div>
+                        <div>
+                            <div id="adventureWords">
+                                First of all, I love adventures... From skydiving to scubadiving.
+                            </div>
+                            <div id="adventureWords2">
+                                Not to mention my CS journey has been quite the experience. I grew up in rural Maryland
+                                but now
+                                reside in Baltimore.
+                            </div>
+                            <div id="adventureWords3">
+                                While I used to compete on University of Maryland's Boxing Team, I
+                                still find find that
+                                exercise is particularly useful when needing to take a step back from my code to regroup
+                                and
+                                reassess.
+                            </div>
+                            <div id="adventureWords4">
+                                I love my family and friends dearly... But I also love pho. You can never have too much
+                                pho.
+                            </div>
+                        </div>
+                </div>
+                </section> -->
 
     <!-- My Work -->
-    <section class="my-work" id="work">
+    <!-- <section class="my-work" id="work">
         <div>
             <h2 class="section__title">My Work</h2>
             <p class="section__subtitle"></p>
@@ -143,7 +307,7 @@
                 <img src="Hasami_Shogi_9x9_init_config.png" alt="Project description" class="portfolio__img">
             </a>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <div class="footer">
@@ -151,10 +315,10 @@
         <ul class="social-list">
             <li class="social-list__item"><a class="social-list__link"
                     href="https://www.linkedin.com/in/michael-richard-rigali/"><i class="fab fa-linkedin"></i></a></li>
-            <li class="social-list__item"><a class="social-list__link"
-                    href="https://github.com/MichaelRigali"><i class="fab fa-github-square"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/MichaelRigali"><i
+                        class="fab fa-github-square"></i></a></li>
         </ul>
-    </footer>
+        </footer>
 </body>
 
 </html>
