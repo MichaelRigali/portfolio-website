@@ -265,10 +265,11 @@ nav { display: none; }
   }
 
 .rotcacc {
-  margin-top: 50px;
+
   color: var(--clr-light);
     text-shadow: 1px 2px black;
     font-weight: bold;
+    width: 300px;
 }
 
 .rotcacc2 {
@@ -321,11 +322,11 @@ nav { display: none; }
 }
 
 .posfix11 {
-  
+  margin-right: 300px;
 }
 
 .posfix12 {
- 
+ margin-right: 300px;
 }
 
 .quickfix {
@@ -335,9 +336,10 @@ nav { display: none; }
 .griddisplay {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px;
+  column-gap: 5px;
   box-sizing: border-box;
-  border-bottom: solid #054781 thick;
+  border-bottom: solid #447b7c thick;
+  height: 480px;
 }
 
 /* My Services Section */
@@ -465,8 +467,8 @@ nav { display: none; }
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 22px;
     box-sizing: border-box;
-    margin-left: 400px;
-    margin-top: 200px;
+    margin-left: 300px;
+    margin-top: 100px;
 }
 
 .text p {
@@ -521,16 +523,6 @@ nav { display: none; }
   shape-margin: 7%;
 }
 
-.quote-wrapper blockquote footer {
-  width: 100%;
-  position: absolute;
-  bottom: 25px;
-  font-size: 17px;
-  text-align: center;
-  font-style: italic;
-  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
-}
-
 .quote-wrapper::before {
   content: "\201C";
   font-size: 270px;
@@ -548,8 +540,8 @@ nav { display: none; }
 
 @media (min-width: 850px) {
   .quote-wrapper {
-    width: 370px;
-    height: 370px;
+    width: 510px;
+    height: 510px;
   }
 
   .quote-wrapper::before {
@@ -560,9 +552,6 @@ nav { display: none; }
     font-size: 26px;
   }
 
-  .quote-wrapper blockquote footer {
-    bottom: 32px;
-  }
 }
 
 #adventureWords2 {
